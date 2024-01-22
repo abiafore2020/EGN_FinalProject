@@ -1,1 +1,1 @@
-##EGN Final Project Mobile App
+# EGN 4952 Final Project - Angelina Biafore
