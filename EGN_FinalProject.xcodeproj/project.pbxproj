@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1928E0D32B5F211400C8B157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928E0D22B5F211400C8B157 /* AppDelegate.swift */; };
 		1928E0D52B5F211400C8B157 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928E0D42B5F211400C8B157 /* SceneDelegate.swift */; };
-		1928E0D72B5F211400C8B157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928E0D62B5F211400C8B157 /* ViewController.swift */; };
+		1928E0D72B5F211400C8B157 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928E0D62B5F211400C8B157 /* HomeScreenViewController.swift */; };
 		1928E0DA2B5F211400C8B157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1928E0D82B5F211400C8B157 /* Main.storyboard */; };
 		1928E0DC2B5F211600C8B157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1928E0DB2B5F211600C8B157 /* Assets.xcassets */; };
 		1928E0DF2B5F211600C8B157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1928E0DD2B5F211600C8B157 /* LaunchScreen.storyboard */; };
+		1928E0E82B5F262C00C8B157 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 1928E0E72B5F262C00C8B157 /* Nuke */; };
+		1928E0EB2B5F263A00C8B157 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1928E0EA2B5F263A00C8B157 /* ParseSwift */; };
+		194E45212B631BD700621969 /* DroneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E45202B631BD700621969 /* DroneInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1928E0CF2B5F211400C8B157 /* EGN_FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGN_FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1928E0D22B5F211400C8B157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1928E0D42B5F211400C8B157 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1928E0D62B5F211400C8B157 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1928E0D62B5F211400C8B157 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		1928E0D92B5F211400C8B157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1928E0DB2B5F211600C8B157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1928E0DE2B5F211600C8B157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1928E0E02B5F211600C8B157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		194E45202B631BD700621969 /* DroneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1928E0EB2B5F263A00C8B157 /* ParseSwift in Frameworks */,
+				1928E0E82B5F262C00C8B157 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +64,8 @@
 			children = (
 				1928E0D22B5F211400C8B157 /* AppDelegate.swift */,
 				1928E0D42B5F211400C8B157 /* SceneDelegate.swift */,
-				1928E0D62B5F211400C8B157 /* ViewController.swift */,
+				1928E0D62B5F211400C8B157 /* HomeScreenViewController.swift */,
+				194E45202B631BD700621969 /* DroneInfoCell.swift */,
 				1928E0D82B5F211400C8B157 /* Main.storyboard */,
 				1928E0DB2B5F211600C8B157 /* Assets.xcassets */,
 				1928E0DD2B5F211600C8B157 /* LaunchScreen.storyboard */,
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = EGN_FinalProject;
+			packageProductDependencies = (
+				1928E0E72B5F262C00C8B157 /* Nuke */,
+				1928E0EA2B5F263A00C8B157 /* ParseSwift */,
+			);
 			productName = EGN_FinalProject;
 			productReference = 1928E0CF2B5F211400C8B157 /* EGN_FinalProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = 1928E0C62B5F211400C8B157;
+			packageReferences = (
+				1928E0E62B5F262C00C8B157 /* XCRemoteSwiftPackageReference "Nuke" */,
+				1928E0E92B5F263A00C8B157 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = 1928E0D02B5F211400C8B157 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1928E0D72B5F211400C8B157 /* ViewController.swift in Sources */,
+				1928E0D72B5F211400C8B157 /* HomeScreenViewController.swift in Sources */,
 				1928E0D32B5F211400C8B157 /* AppDelegate.swift in Sources */,
+				194E45212B631BD700621969 /* DroneInfoCell.swift in Sources */,
 				1928E0D52B5F211400C8B157 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +379,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1928E0E62B5F262C00C8B157 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.11.2;
+			};
+		};
+		1928E0E92B5F263A00C8B157 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1928E0E72B5F262C00C8B157 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1928E0E62B5F262C00C8B157 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		1928E0EA2B5F263A00C8B157 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1928E0E92B5F263A00C8B157 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1928E0C72B5F211400C8B157 /* Project object */;
 }
