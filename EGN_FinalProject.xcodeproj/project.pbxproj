@@ -15,6 +15,7 @@
 		1928E0DF2B5F211600C8B157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1928E0DD2B5F211600C8B157 /* LaunchScreen.storyboard */; };
 		1928E0E82B5F262C00C8B157 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 1928E0E72B5F262C00C8B157 /* Nuke */; };
 		1928E0EB2B5F263A00C8B157 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1928E0EA2B5F263A00C8B157 /* ParseSwift */; };
+		194B16A82B63F470003C55F7 /* DroneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B16A72B63F470003C55F7 /* DroneModel.swift */; };
 		194E45212B631BD700621969 /* DroneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E45202B631BD700621969 /* DroneInfoCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		1928E0DB2B5F211600C8B157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1928E0DE2B5F211600C8B157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1928E0E02B5F211600C8B157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		194B16A72B63F470003C55F7 /* DroneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneModel.swift; sourceTree = "<group>"; };
 		194E45202B631BD700621969 /* DroneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,14 +66,39 @@
 			children = (
 				1928E0D22B5F211400C8B157 /* AppDelegate.swift */,
 				1928E0D42B5F211400C8B157 /* SceneDelegate.swift */,
-				1928E0D62B5F211400C8B157 /* HomeScreenViewController.swift */,
-				194E45202B631BD700621969 /* DroneInfoCell.swift */,
+				194B16AA2B63FA2A003C55F7 /* Models */,
+				194B16A92B63FA18003C55F7 /* HomeScreen */,
+				194B16AB2B63FA3A003C55F7 /* DroneDetailScreen */,
 				1928E0D82B5F211400C8B157 /* Main.storyboard */,
 				1928E0DB2B5F211600C8B157 /* Assets.xcassets */,
 				1928E0DD2B5F211600C8B157 /* LaunchScreen.storyboard */,
 				1928E0E02B5F211600C8B157 /* Info.plist */,
 			);
 			path = EGN_FinalProject;
+			sourceTree = "<group>";
+		};
+		194B16A92B63FA18003C55F7 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1928E0D62B5F211400C8B157 /* HomeScreenViewController.swift */,
+				194E45202B631BD700621969 /* DroneInfoCell.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		194B16AA2B63FA2A003C55F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				194B16A72B63F470003C55F7 /* DroneModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		194B16AB2B63FA3A003C55F7 /* DroneDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DroneDetailScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1928E0D72B5F211400C8B157 /* HomeScreenViewController.swift in Sources */,
+				194B16A82B63F470003C55F7 /* DroneModel.swift in Sources */,
 				1928E0D32B5F211400C8B157 /* AppDelegate.swift in Sources */,
 				194E45212B631BD700621969 /* DroneInfoCell.swift in Sources */,
 				1928E0D52B5F211400C8B157 /* SceneDelegate.swift in Sources */,
