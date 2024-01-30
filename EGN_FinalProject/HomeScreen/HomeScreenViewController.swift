@@ -49,7 +49,7 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
             .include("droneId")
             .include("status")
             .include("peopleFound")
-            .include("droneImageURL")
+            .include("droneImageUrl")
             .order([.descending("peopleFound")])
         
         query.find { [weak self] result in

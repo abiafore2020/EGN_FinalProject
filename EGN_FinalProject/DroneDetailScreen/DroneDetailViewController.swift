@@ -23,12 +23,13 @@ class DroneDetailViewController: UIViewController {
     var drone: Drone!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Nuke.loadImage(with: drone.droneImageURL, into: droneDetailImageView)
         droneDetailIDLabel.text = drone.droneId
         droneDetailStatusLabel.text = drone.status
         droneDetailCountLabel.text = drone.peopleFound
         droneDetailCoordinatesLabel.text = drone.coordinates
-        // Do any additional setup after loading the view.
+        if let imageURL = drone.droneImageUrl, let url = URL(string: imageURL) {
+                    Nuke.loadImage(with: url, into: droneDetailImageView)
+                }
     }
     
 

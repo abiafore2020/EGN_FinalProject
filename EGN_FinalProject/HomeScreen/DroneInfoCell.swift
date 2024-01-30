@@ -32,7 +32,9 @@ class DroneInfoCell: UITableViewCell {
         droneLabel.text = drone.droneId
         droneStatusLabel.text = drone.status
         peopleFoundLabel.text = drone.peopleFound
-        Nuke.loadImage(with: drone.droneImageURL, into: droneImageView)
+        if let imageURL = drone.droneImageUrl, let url = URL(string: imageURL) {
+                    Nuke.loadImage(with: url, into: droneImageView)
+                }
     }
 
 }
