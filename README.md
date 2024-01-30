@@ -21,14 +21,6 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-<div>
-    <a href="https://www.loom.com/share/65bfa5759d574e9bb02f1b773d807c36">
-      <p>Loom | Free Screen & Video Recording Software | Loom - 10 October 2023 - Watch Video</p>
-    </a>
-    <a href="https://www.loom.com/share/65bfa5759d574e9bb02f1b773d807c36">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/65bfa5759d574e9bb02f1b773d807c36-with-play.gif">
-    </a>
-  </div>
 
 ## License
 
