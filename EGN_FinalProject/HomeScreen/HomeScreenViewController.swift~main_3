@@ -13,7 +13,7 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var tableView: UITableView!
     
     
-    var drones = [Drone](){
+    private var drones = [Drone](){
         didSet{
             print(drones)
             tableView.reloadData()
@@ -41,15 +41,14 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
             .include("status")
             .include("peopleFound")
             .include("droneImageURL")
-            .order([.descending("peopleFound")])
+            .order([.descending("updatedAt")])
         
         query.find { [weak self] result in
             switch result {
             case . success(let drones):
                 self?.drones = drones
-            case .failure(let error):
+            case .failure:
                 print("Something happened :(")
-                print("Query failed with error: \(error)")
             }
             completion?()
         }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Nuke
 
 class DroneInfoCell: UITableViewCell {
     
@@ -31,7 +32,7 @@ class DroneInfoCell: UITableViewCell {
         droneLabel.text = drone.droneId
         droneStatusLabel.text = drone.status
         peopleFoundLabel.text = drone.peopleFound
-        //drone.droneImageView = COME BACK TO
+        Nuke.loadImage(with: drone.droneImageURL, into: droneImageView)
     }
 
 }
