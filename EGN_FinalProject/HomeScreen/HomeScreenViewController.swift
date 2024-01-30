@@ -35,6 +35,15 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
         queryDrones()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let cell = sender as? UITableViewCell,
+           let indexPath = tableView.indexPath(for: cell),
+           let detailViewController = segue.destination as? DroneDetailViewController {
+            let drone = drones[indexPath.row]
+            detailViewController.drone = drone
+        }
+    }
+    
     private func queryDrones(completion: (() -> Void)? = nil) {
         let query = Drone.query()
             .include("droneId")

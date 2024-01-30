@@ -17,6 +17,7 @@
 		1928E0EB2B5F263A00C8B157 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1928E0EA2B5F263A00C8B157 /* ParseSwift */; };
 		194B16A82B63F470003C55F7 /* DroneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B16A72B63F470003C55F7 /* DroneModel.swift */; };
 		194E45212B631BD700621969 /* DroneInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E45202B631BD700621969 /* DroneInfoCell.swift */; };
+		19A6827D2B69672B00C94E54 /* DroneDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6827C2B69672B00C94E54 /* DroneDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1928E0E02B5F211600C8B157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		194B16A72B63F470003C55F7 /* DroneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneModel.swift; sourceTree = "<group>"; };
 		194E45202B631BD700621969 /* DroneInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneInfoCell.swift; sourceTree = "<group>"; };
+		19A6827C2B69672B00C94E54 /* DroneDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		194B16AB2B63FA3A003C55F7 /* DroneDetailScreen */ = {
 			isa = PBXGroup;
 			children = (
+				19A6827C2B69672B00C94E54 /* DroneDetailViewController.swift */,
 			);
 			path = DroneDetailScreen;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A6827D2B69672B00C94E54 /* DroneDetailViewController.swift in Sources */,
 				1928E0D72B5F211400C8B157 /* HomeScreenViewController.swift in Sources */,
 				194B16A82B63F470003C55F7 /* DroneModel.swift in Sources */,
 				1928E0D32B5F211400C8B157 /* AppDelegate.swift in Sources */,

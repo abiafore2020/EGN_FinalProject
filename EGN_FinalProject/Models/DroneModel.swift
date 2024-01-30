@@ -22,4 +22,5 @@ struct Drone: ParseObject {
     var status: String?
     var peopleFound: String?
     var droneImageURL: String? //come back to this
+    var coordinates: String?
 }

@@ -94,20 +94,145 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Drone Detail View Controller-->
         <scene sceneID="TSU-pS-ZDL">
             <objects>
-                <viewController id="ck7-g1-8Lo" sceneMemberID="viewController">
+                <viewController id="ck7-g1-8Lo" customClass="DroneDetailViewController" customModule="EGN_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hfu-5f-fRL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="RPz-pl-0ls">
+                                <rect key="frame" x="76" y="173" width="110.66666666666669" height="214"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="waQ-jr-TER">
+                                        <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="50.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juW-fX-B2H">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="22.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Drone Status:">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Fn-B3I">
+                                                <rect key="frame" x="0.0" y="30.333333333333343" width="49" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BdS-MQ-pIS">
+                                        <rect key="frame" x="0.0" y="81.666666666666657" width="110.66666666666667" height="50.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCh-el-yar">
+                                                <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="22.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="People Found">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X1-QM-ohn">
+                                                <rect key="frame" x="0.0" y="30.333333333333343" width="46.333333333333336" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RVB-tR-MyO">
+                                        <rect key="frame" x="0.0" y="163.33333333333331" width="110.66666666666667" height="50.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-m1-ENo">
+                                                <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="22.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Coordinates">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X,Y,Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxm-rA-h5x">
+                                                <rect key="frame" x="0.0" y="30.333333333333371" width="38.666666666666664" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="mE5-0A-NqX">
+                                <rect key="frame" x="76.666666666666671" y="496" width="239.66666666666663" height="265.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw9-KS-QxY">
+                                        <rect key="frame" x="64.666666666666657" y="0.0" width="110.66666666666666" height="22.333333333333332"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Recent Image">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sbi-V3-gZt">
+                                        <rect key="frame" x="0.0" y="28.333333333333371" width="239.66666666666666" height="237"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sbi-V3-gZt" firstAttribute="leading" secondItem="mE5-0A-NqX" secondAttribute="leadingMargin" id="Ppb-Dg-tta"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMd-8u-15K">
+                                <rect key="frame" x="91" y="93" width="211" height="39"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Drone Number">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="35"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="b43-H0-2w3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nMd-8u-15K" firstAttribute="centerX" secondItem="mE5-0A-NqX" secondAttribute="centerX" id="ETg-MR-FhN"/>
+                            <constraint firstItem="nMd-8u-15K" firstAttribute="top" secondItem="b43-H0-2w3" secondAttribute="top" constant="93" id="KEG-e6-aU5"/>
+                            <constraint firstItem="RPz-pl-0ls" firstAttribute="top" secondItem="nMd-8u-15K" secondAttribute="bottom" constant="41" id="Rl7-ZI-kec"/>
+                            <constraint firstItem="b43-H0-2w3" firstAttribute="bottom" secondItem="mE5-0A-NqX" secondAttribute="bottom" constant="80.666666666666742" id="Vu9-z5-DQe"/>
+                            <constraint firstItem="nMd-8u-15K" firstAttribute="centerX" secondItem="Hfu-5f-fRL" secondAttribute="centerX" id="W71-LI-g9e"/>
+                            <constraint firstItem="RPz-pl-0ls" firstAttribute="leading" secondItem="b43-H0-2w3" secondAttribute="leading" constant="76" id="eaH-uh-2ks"/>
+                            <constraint firstItem="mE5-0A-NqX" firstAttribute="top" secondItem="Hfu-5f-fRL" secondAttribute="top" constant="496" id="oJM-IS-7O2"/>
+                            <constraint firstItem="mE5-0A-NqX" firstAttribute="leading" secondItem="b43-H0-2w3" secondAttribute="leading" constant="76.666666666666686" id="y6V-a6-WdE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="droneDetailCoordinatesLabel" destination="Uxm-rA-h5x" id="bNf-kc-lnz"/>
+                        <outlet property="droneDetailCountLabel" destination="9X1-QM-ohn" id="u06-e3-vmw"/>
+                        <outlet property="droneDetailIDLabel" destination="nMd-8u-15K" id="6KX-T7-Zgr"/>
+                        <outlet property="droneDetailImageView" destination="sbi-V3-gZt" id="eFO-Lu-ZVj"/>
+                        <outlet property="droneDetailStatusLabel" destination="hhh-Fn-B3I" id="NJW-sl-2AA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70M-gK-UjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="10"/>
+            <point key="canvasLocation" x="927.48091603053433" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
