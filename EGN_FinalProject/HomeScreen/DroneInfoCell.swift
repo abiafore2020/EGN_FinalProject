@@ -12,10 +12,8 @@ class DroneInfoCell: UITableViewCell {
     
     
     @IBOutlet weak var droneLabel: UILabel!
-    @IBOutlet weak var droneStatusLabel: UILabel!
     @IBOutlet weak var peopleFoundLabel: UILabel!
     @IBOutlet weak var droneImageView: UIImageView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +28,6 @@ class DroneInfoCell: UITableViewCell {
     
     func configure(with drone: Drone){
         droneLabel.text = drone.droneId
-        droneStatusLabel.text = drone.status
         peopleFoundLabel.text = drone.peopleFound
         if let imageURL = drone.droneImageUrl, let url = URL(string: imageURL) {
                     Nuke.loadImage(with: url, into: droneImageView)
