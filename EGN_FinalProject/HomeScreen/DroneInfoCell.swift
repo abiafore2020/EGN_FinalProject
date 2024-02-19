@@ -14,6 +14,7 @@ class DroneInfoCell: UITableViewCell {
     @IBOutlet weak var droneLabel: UILabel!
     @IBOutlet weak var peopleFoundLabel: UILabel!
     @IBOutlet weak var droneImageView: UIImageView!
+    @IBOutlet weak var coordinatesLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +30,7 @@ class DroneInfoCell: UITableViewCell {
     func configure(with drone: Drone){
         droneLabel.text = drone.droneId
         peopleFoundLabel.text = drone.peopleFound
+        coordinatesLabel.text = drone.coordinates
         if let imageURL = drone.droneImageUrl, let url = URL(string: imageURL) {
                     Nuke.loadImage(with: url, into: droneImageView)
                 }

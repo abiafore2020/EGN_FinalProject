@@ -27,83 +27,60 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="103" translatesAutoresizingMaskIntoConstraints="NO" id="lZ4-xM-AIz">
-                                                    <rect key="frame" x="14" y="8" width="358.33333333333331" height="114"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="117" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-nA-Fhk">
+                                                    <rect key="frame" x="20" y="8" width="364.33333333333331" height="114"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="wcS-uy-zmP">
-                                                            <rect key="frame" x="0.0" y="26.333333333333339" width="135.33333333333334" height="61.666666666666657"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bgX-AB-7gw">
+                                                            <rect key="frame" x="0.0" y="18.666666666666671" width="127.33333333333333" height="77"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZNe-42-cBj">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="20.333333333333332"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIL-A8-qtJ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="17" height="20.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                    <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c1u-9M-O9c">
+                                                                    <rect key="frame" x="0.0" y="28.333333333333336" width="127.33333333333333" height="20.333333333333336"/>
                                                                     <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-aP-QYS">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="20.333333333333332"/>
-                                                                            <subviews>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.text.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8DE-GH-G1q">
-                                                                                    <rect key="frame" x="0.0" y="1.6666666666666643" width="23.666666666666668" height="17.333333333333336"/>
-                                                                                </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq6-ai-jLJ">
-                                                                                    <rect key="frame" x="24.666666666666664" y="0.0" width="20.666666666666664" height="20.333333333333332"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIL-A8-qtJ">
-                                                                            <rect key="frame" x="53.333333333333329" y="0.0" width="17" height="20.333333333333332"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-AH-1fX">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="11" height="20.333333333333332"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWy-0W-eVg">
+                                                                            <rect key="frame" x="18.999999999999993" y="0.0" width="108.33333333333331" height="20.333333333333332"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2o8-iW-fEJ">
-                                                                    <rect key="frame" x="0.0" y="41.333333333333336" width="135.33333333333334" height="20.333333333333336"/>
-                                                                    <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3kz-QC-0jk">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="79" height="20.333333333333332"/>
-                                                                            <subviews>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-sh-zeD">
-                                                                                    <rect key="frame" x="0.0" y="1.6666666666666661" width="27" height="18.333333333333336"/>
-                                                                                </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-LE-aol">
-                                                                                    <rect key="frame" x="28" y="0.0" width="51" height="20.333333333333332"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-AH-1fX">
-                                                                            <rect key="frame" x="87" y="0.0" width="48.333333333333343" height="20.333333333333332"/>
-                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Coordinates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-eh-lUy">
+                                                                    <rect key="frame" x="0.0" y="56.666666666666664" width="97" height="20.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                    <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4R3-dG-fPl">
-                                                            <rect key="frame" x="238.33333333333337" y="0.0" width="120" height="114"/>
+                                                            <rect key="frame" x="244.33333333333331" y="0.0" width="120" height="114"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="120" id="r4r-fM-PpI"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="4R3-dG-fPl" firstAttribute="top" secondItem="lZ4-xM-AIz" secondAttribute="top" id="vNC-ps-3GJ"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lZ4-xM-AIz" firstAttribute="top" secondItem="49P-l5-Vu0" secondAttribute="top" constant="8" id="2jX-tn-naC"/>
-                                                <constraint firstAttribute="bottom" secondItem="lZ4-xM-AIz" secondAttribute="bottom" constant="8" id="7yy-gL-Rhs"/>
-                                                <constraint firstItem="lZ4-xM-AIz" firstAttribute="leading" secondItem="49P-l5-Vu0" secondAttribute="leadingMargin" constant="-6" id="wzU-fX-9Tu"/>
+                                                <constraint firstItem="vX5-nA-Fhk" firstAttribute="top" secondItem="49P-l5-Vu0" secondAttribute="topMargin" constant="-3" id="XnS-ci-SgE"/>
+                                                <constraint firstItem="vX5-nA-Fhk" firstAttribute="centerY" secondItem="49P-l5-Vu0" secondAttribute="centerY" id="YEI-xI-1tM"/>
+                                                <constraint firstItem="vX5-nA-Fhk" firstAttribute="leading" secondItem="49P-l5-Vu0" secondAttribute="leadingMargin" id="ZDB-a9-4vt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="coordinatesLabel" destination="8ci-eh-lUy" id="zOG-Cy-5LD"/>
                                             <outlet property="droneImageView" destination="4R3-dG-fPl" id="WK7-f5-Fp2"/>
                                             <outlet property="droneLabel" destination="yIL-A8-qtJ" id="snG-Sg-a5C"/>
                                             <outlet property="peopleFoundLabel" destination="g6c-AH-1fX" id="cXR-Aj-6We"/>
@@ -112,21 +89,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa3-cG-6O8">
-                                <rect key="frame" x="16" y="59" width="216" height="42"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Drone Reports">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="35"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone Reports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa3-cG-6O8">
+                                <rect key="frame" x="15.999999999999986" y="59" width="234.66666666666663" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.25098039215686274" green="0.39215686274509803" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="pCm-lp-1eC" firstAttribute="top" secondItem="wa3-cG-6O8" secondAttribute="bottom" constant="8" symbolic="YES" id="5r5-tK-hmi"/>
                             <constraint firstItem="pCm-lp-1eC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7q9-b6-W9e"/>
@@ -153,20 +124,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="RPz-pl-0ls">
-                                <rect key="frame" x="76" y="176" width="120.33333333333331" height="219"/>
+                                <rect key="frame" x="76" y="176" width="129" height="219"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="waQ-jr-TER">
-                                        <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="52.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="52.333333333333336"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juW-fX-B2H">
-                                                <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="24"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Drone Status:">
-                                                        <attributes>
-                                                            <font key="NSFont" metaFont="system" size="20"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juW-fX-B2H">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-Fn-B3I">
@@ -178,18 +144,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BdS-MQ-pIS">
-                                        <rect key="frame" x="0.0" y="83.333333333333314" width="120.33333333333333" height="52.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="83.333333333333314" width="129" height="52.333333333333343"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCh-el-yar">
-                                                <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="24"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="People Found">
-                                                        <attributes>
-                                                            <font key="NSFont" metaFont="system" size="20"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCh-el-yar">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X1-QM-ohn">
@@ -201,18 +161,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RVB-tR-MyO">
-                                        <rect key="frame" x="0.0" y="166.66666666666669" width="120.33333333333333" height="52.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="166.66666666666669" width="129" height="52.333333333333343"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-m1-ENo">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="24"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Coordinates">
-                                                        <attributes>
-                                                            <font key="NSFont" metaFont="system" size="20"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-m1-ENo">
+                                                <rect key="frame" x="0.0" y="0.0" width="115.33333333333333" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X,Y,Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxm-rA-h5x">
@@ -228,15 +182,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="mE5-0A-NqX">
                                 <rect key="frame" x="76.666666666666671" y="496" width="239.66666666666663" height="265.33333333333326"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw9-KS-QxY">
-                                        <rect key="frame" x="59.666666666666679" y="0.0" width="120.33333333333331" height="24"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Recent Image">
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw9-KS-QxY">
+                                        <rect key="frame" x="55.333333333333329" y="0.0" width="129" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sbi-V3-gZt">
@@ -247,15 +196,10 @@
                                     <constraint firstItem="sbi-V3-gZt" firstAttribute="leading" secondItem="mE5-0A-NqX" secondAttribute="leadingMargin" id="Ppb-Dg-tta"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMd-8u-15K">
-                                <rect key="frame" x="86.666666666666671" y="93" width="219.66666666666663" height="42"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Drone Number">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="35"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMd-8u-15K">
+                                <rect key="frame" x="78.333333333333329" y="93" width="236.33333333333337" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.25098039220000001" green="0.3921568627" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -286,8 +230,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.2.fill" catalog="system" width="128" height="86"/>
-        <image name="person.text.rectangle" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
