@@ -20,7 +20,7 @@ struct Drone: ParseObject {
     //our own custom properties
     var droneId: String?
     var status: String?
-    var peopleFound: String?
+    var peopleFound: Int?
     var droneImageUrl: String?
     var coordinates: String?
 }

@@ -24,8 +24,7 @@ class DroneDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         droneDetailIDLabel.text = drone.droneId
-        droneDetailStatusLabel.text = drone.status
-        droneDetailCountLabel.text = drone.peopleFound
+        droneDetailCountLabel.text = "\(drone.peopleFound ?? 0)"
         droneDetailCoordinatesLabel.text = drone.coordinates
         if let imageURL = drone.droneImageUrl, let url = URL(string: imageURL) {
                     Nuke.loadImage(with: url, into: droneDetailImageView)

@@ -29,7 +29,7 @@ class DroneInfoCell: UITableViewCell {
     
     func configure(with drone: Drone){
         droneLabel.text = drone.droneId
-        peopleFoundLabel.text = drone.peopleFound
+        peopleFoundLabel.text = "\(drone.peopleFound ?? 0)"
         coordinatesLabel.text = drone.coordinates
         if let imageURL = drone.droneImageUrl, let url = URL(string: imageURL) {
                     Nuke.loadImage(with: url, into: droneImageView)
