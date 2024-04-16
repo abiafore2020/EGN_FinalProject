@@ -23,6 +23,7 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.rowHeight = 130
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()

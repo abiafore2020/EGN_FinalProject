@@ -26,6 +26,7 @@ class DroneDetailViewController: UIViewController {
         droneDetailIDLabel.text = drone.droneId
         droneDetailCountLabel.text = "\(drone.peopleFound ?? 0)"
         droneDetailCoordinatesLabel.text = drone.coordinates
+        droneDetailStatusLabel.text = drone.status
         if let imageURL = drone.droneImageUrl, let url = URL(string: imageURL) {
                     Nuke.loadImage(with: url, into: droneDetailImageView)
                 }
