@@ -19,9 +19,6 @@ The following **optional** features are implemented:
 - [x] App Icon is added
 
 
-## Video Walkthrough
-
-
 ## License
 
     Copyright [2023] [Angelina Biafore]
